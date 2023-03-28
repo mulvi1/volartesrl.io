@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+*{    
+    font-family: 'Quicksand';
+}
+
+@media screen and (max-width: 767px) {
+  .contenido-seccion {
+    flex-direction: column;
+  }
+  .titulo-seccion{
+    flex: 1 1 auto;
+  }
+}
+
+/*Seccion inicio*/
+header{
+    background-image: url("/img/arrocera.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+  }
+  #avion {
+    width: 350px;
+    position: absolute;
+    top: 10px;
+    left: -100px;
+    animation: mover-avion 8s linear infinite;
+  }
+  @keyframes mover-avion {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(100vw + 100px));
+    }
+  }
+  #logo2{
+    margin-left: 600px;
+    margin-top: 10px;
+    width: 100px;
+  }
+
+/*Menu barra*/
+.inicio .contenido-seccion header .nav-bar{
+  position: fixed;
+  background-color: brown;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  cursor: pointer;
+  transition: .3s;
+}
+.inicio .contenido-seccion header nav{
+  position: fixed;
+  margin-left: 60px;
+  background-color: brown;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+  z-index: 99;
+  display: none;
+}
+.inicio .contenido-seccion header nav a{
+  display: block;
+  color: rgb(4, 5, 5);
+  text-decoration: none;
+  font-weight: bold;
+}
+.inicio .contenido-seccion header .nav-bar:hover{
+  box-shadow: 0 0 35px #0d026e;
+}
+
+/*Seccion Historia*/
+.historia{
+background-color: blanchedalmond;
+padding: 20px 0 300px 0;
+text-align: center;
+}
+.historia .contenido-seccion h1{
+  font-size: 40px;
+  text-decoration: underline;
+}
+.historia p{
+  overflow: auto;
+}
+
+.historia p{
+  float: left;
+  width: 50%;
+}
+
+/*Seccion Informacion*/
+.informacion{
+  background-color: #f3eeee;
+  padding: 20px 0 300px 0;
+}
+.informacion .contenido-seccion h1{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 40px;
+}
+.contenido-seccion .aeronave{
+  width: 40%;
+  padding-right: 10px;
+  display: inline-block;
+  margin-top: 50px;
+}
+.contenido-seccion .imagen{
+  float: right;
+  position: relative;
+  width: 740px;
+  height: 300px;
+  margin-right: -100px;
+}
+.contenido-seccion .imagen img{
+  width: 450px;
+  height: 400px;
+  padding-left: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.flecha {
+  font-size: 30px;
+  color: rgb(2, 2, 2);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0.5;
+  transition: opacity 0.2s;  
+}
+.flecha:hover {
+  opacity: 1;
+}
+.flecha-izquierda {
+  left: 10px;
+}
+.flecha-derecha {
+  right: 210px;
+}
+.contenido-seccion .tierra{
+  width: 40%;
+  margin-top: 250px;
+  padding-right: 10px;
+  display: inline-block;
+}
+.contenido-seccion .imagen2{
+  float: right;
+  position: relative; 
+  width: 740px;
+  height: 300px;
+  margin-top: -300px;
+  margin-right: -100px;
+}
+.contenido-seccion .imagen2 img{
+  width: 450px;
+  height: 400px;
+  padding-left: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.contenido-seccion .flecha2 {
+  font-size: 30px;
+  color: rgb(2, 2, 2);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0.5;
+  transition: opacity 0.2s;  
+}
+.flecha:hover {
+  opacity: 1;
+}
+.contenido-seccion .flecha-izquierda2 {
+  left: 10px;
+}
+.contenido-seccion .flecha-derecha2 {
+  right: 210px;
+}
+.contenido-seccion .base{
+  width: 40%;
+  margin-top: 300px;
+  display: inline-block;
+}
+.contenido-seccion .imagen3{
+  float: right;
+  position: relative;
+  width: 740px;
+  height: 300px;
+  margin-top: 200px;
+  margin-right: -100px;
+}
+.contenido-seccion .imagen3 img{
+  width: 450px;
+  height: 400px;
+  padding-left: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.contenido-seccion .flecha3 {
+  font-size: 30px;
+  color: rgb(2, 2, 2);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0.5;
+  transition: opacity 0.2s;  
+}
+.flecha:hover {
+  opacity: 1;
+}
+.contenido-seccion .flecha-izquierda3 {
+  left: 10px;
+}
+.contenido-seccion .flecha-derecha3 {
+  right: 210px;
+}
+.contenido-seccion .servicios{
+  width: 40%;
+  margin-top: 300px;
+  display: inline-block;
+}
+.contenido-seccion .imagen4{
+  float: right;
+  position: relative;
+  width: 740px;
+  height: 300px;
+  margin-top: -250px;
+  margin-right: -100px;
+}
+.contenido-seccion .imagen4 img{
+  width: 450px;
+  height: 400px;
+  padding-left: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.contenido-seccion .flecha4 {
+  font-size: 30px;
+  color: rgb(2, 2, 2);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0.5;
+  transition: opacity 0.2s;  
+}
+.flecha:hover {
+  opacity: 1;
+}
+.contenido-seccion .flecha-izquierda4 {
+  left: 10px;
+}
+.contenido-seccion .flecha-derecha4 {
+  right: 210px;
+}
+/*Seccion Contacto*/
+.contacto{
+  background-color: #011801;
+  padding: 20px 0 200px 0;
+  color: rgb(75, 75, 223);
+  text-align: center;
+}
+.contacto h1{
+  font-size: 40px;
+  text-decoration: underline;
+}
