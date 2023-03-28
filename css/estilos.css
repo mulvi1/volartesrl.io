@@ -14,7 +14,7 @@
 
 /*Seccion inicio*/
 header{
-    background-image: url("/img/arrocera.jpg");
+    background-image: url("img/arrocera.jpg");
     background-size: cover;
     background-position: center;
     height: 300px;
