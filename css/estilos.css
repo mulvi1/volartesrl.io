@@ -13,12 +13,20 @@
 }
 
 /*Seccion inicio*/
-header{
-    background-image: url("img/arrocera.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 300px;
+.inicio .contenido-seccion header .contenedor{
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px
   }
+.inicio .contenido-seccion header .contenedor img{
+  position: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
   #avion {
     width: 350px;
     position: absolute;
@@ -35,8 +43,9 @@ header{
     }
   }
   #logo2{
+    position: absolute;
+    top: 10px;
     margin-left: 600px;
-    margin-top: 10px;
     width: 100px;
   }
 
